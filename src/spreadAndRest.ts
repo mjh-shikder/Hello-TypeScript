@@ -26,7 +26,7 @@ console.log(userInfo);
 // ? Rest Oparator
 
 const sendInvite = (frined1: string, friend2: string, friend3: string) => {
-  console.log(`Sent old Invitation to ${frined1}`);
+  console.log(`Sent old Invitation to ${frined1}`); // Prachin poddhoti
   console.log(`Sent old Invitation to ${friend2}`);
   console.log(`Sent old Invitation to ${friend3}`);
 };

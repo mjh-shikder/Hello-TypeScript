@@ -4,11 +4,11 @@
 
 let userName: string = 'jubair';
 
-let userId = 423
+let userId: number = 423
 
 userName = "mjh"
 
-let isAdmin = false;
+let isAdmin : boolean = false;
 isAdmin = true
 
 let x = undefined

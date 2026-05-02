@@ -19,11 +19,12 @@ const poorUser = {
         return this.balance + value;         //* const totalBalance = this.balance + value;
     }                                       //* return totalBalance 
     
+    
 };
 
 poorUser.addBalance(10000)
 
-console.log(poorUser.balance);
+console.log();
 
 
 // ? callback fundtion
