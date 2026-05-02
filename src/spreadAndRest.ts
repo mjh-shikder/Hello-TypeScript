@@ -21,6 +21,8 @@ const userInfo = { ...user, ...otherInfo };
 
 console.log(userInfo);
 
+
+
 // ? Rest Oparator
 
 const sendInvite = (frined1: string, friend2: string, friend3: string) => {
