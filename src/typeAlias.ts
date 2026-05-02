@@ -78,4 +78,18 @@ const user2: User = {
 
 }
 
+type IsAdmin = true;
+const isAdmin: IsAdmin = true;
+
+type Name = string;
+
+const name: Name = 'jubair'
+
+
+
+//? Function
+
+type AddFunc = (num1:number, num2: number) => number
+
+const add : AddFunc = (num1, num2) => num1 + num2
 
