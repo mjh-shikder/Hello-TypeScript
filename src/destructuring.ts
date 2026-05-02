@@ -16,7 +16,7 @@ const user = {
 //? const userColor = user.color
 //? const userMiddleName = user.name.middleName
 
-//* const { color:userColor } = user  =>  Name allias
+//* const { color:userColor } = user  =>  Name alias
 // Todo: Destructuring er somoy type define kora jabe na. type like => const { color: string} = user eita korle eita Name allias hisebe count hobe.
 
 const {
