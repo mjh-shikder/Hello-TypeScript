@@ -40,12 +40,14 @@ destination = ['joshor', 'dhaka', 5]
 
 const user: {
   organization: "Next Level Web Development";  // Value take type hisebe define korle eita e fixed thakbe //* Literal types
-  firstName: string;
-  middleName?: string; //* optional type
+  readonly homeTown: string;                    //? access modifier  
+  firstName: string;                    
+  middleName?: string;                          //? optional type
   lastName: string;
   isMarried: boolean;
 } = {
   organization: "Next Level Web Development",
+  homeTown: "Dhaka",
   firstName: "Md",
   middleName: "Jubair",
   lastName: "Hossain",
