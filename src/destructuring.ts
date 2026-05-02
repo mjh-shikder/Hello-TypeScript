@@ -26,3 +26,16 @@ const {
 } = user;
 
 console.log(middleName, userLastName);
+
+
+
+// ? Array Destructuring
+
+const friends = ['karim', 'josim', 'kasim']
+
+const fromDhaka = friends[2] //* Regular way without Destructuring
+
+const [, , kasim] = friends
+
+console.log(kasim);
+
