@@ -11,7 +11,7 @@ interface Developer<T> {
   smartWatch: T;
 }
 
-type PoorWatch ={
+interface PoorWatch {
   heartRate: string;
   stopwatch: boolean;
 }
@@ -31,7 +31,7 @@ const poorDeveloper: Developer<PoorWatch> = {
 };
 
 
-type RichWatch = {
+interface RichWatch {
     heartRate: string;
     callSupport: boolean;
     calculator: boolean;
