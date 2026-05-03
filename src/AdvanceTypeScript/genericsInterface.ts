@@ -1,0 +1,50 @@
+// * Generic with Interface
+
+interface Developer<T> {
+  name: string;
+  salary: number;
+  device: {
+    brand: string;
+    model: string;
+    relasedYear: string;
+  };
+  smartWatch: T;
+}
+
+const poorDeveloper: Developer<{
+  heartRate: string;
+  stopwatch: boolean;
+}> = {
+  name: "Mr Poor",
+  salary: 2000,
+  device: {
+    brand: "dell",
+    model: "AB14",
+    relasedYear: "2014",
+  },
+  smartWatch: {
+    heartRate: "90",
+    stopwatch: true,
+  },
+};
+
+const richDeveloper: Developer<{
+    heartRate: string;
+    callSupport: boolean;
+    calculator: boolean;
+    aiFeature: boolean;
+}> = {
+    name: "Mr Rich",
+    salary: 5000,
+    device: {
+        brand: "ThinkPad",
+        model: "AB14",
+        relasedYear: "2026",
+    },
+    smartWatch: {
+        heartRate: "90",
+        callSupport: true,
+        calculator: true,
+        aiFeature: true,
+    }
+}
