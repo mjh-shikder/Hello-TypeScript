@@ -11,10 +11,12 @@ interface Developer<T> {
   smartWatch: T;
 }
 
-const poorDeveloper: Developer<{
+type PoorWatch ={
   heartRate: string;
   stopwatch: boolean;
-}> = {
+}
+
+const poorDeveloper: Developer<PoorWatch> = {
   name: "Mr Poor",
   salary: 2000,
   device: {
@@ -28,12 +30,15 @@ const poorDeveloper: Developer<{
   },
 };
 
-const richDeveloper: Developer<{
+
+type RichWatch = {
     heartRate: string;
     callSupport: boolean;
     calculator: boolean;
     aiFeature: boolean;
-}> = {
+}
+
+const richDeveloper: Developer<RichWatch> = {
     name: "Mr Rich",
     salary: 5000,
     device: {
