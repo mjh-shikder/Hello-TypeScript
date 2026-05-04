@@ -1,6 +1,6 @@
 // * Generic with Interface
 
-interface Developer<T> {
+interface Developer<T, X = null> {
   name: string;
   salary: number;
   device: {
@@ -8,7 +8,8 @@ interface Developer<T> {
     model: string;
     relasedYear: string;
   };
-  smartWatch: T;
+    smartWatch: T;
+    bike?: X
 }
 
 interface PoorWatch {
@@ -16,7 +17,7 @@ interface PoorWatch {
   stopwatch: boolean;
 }
 
-const poorDeveloper: Developer<PoorWatch> = {
+const poorDeveloper: Developer<PoorWatch, { brand: 'Yeamaha', CC: '200cc'}> = {
   name: "Mr Poor",
   salary: 2000,
   device: {
@@ -51,5 +52,13 @@ const richDeveloper: Developer<RichWatch> = {
         callSupport: true,
         calculator: true,
         aiFeature: true,
-    }
+    },
+    bike: null,
 }
+
+
+// ? Default value 
+const add = (num1: number, num2: number = 0) => num1 + num2;
+
+add(3, 6) // 3+6 = 09
+add(2) // 2 + 0 = 2
