@@ -8,14 +8,14 @@ type Product = {
     color?: string;
 }
 
-// ? Regular way
+// ? Regular way declaring a new type
 type ProductSummary = {
     id: number;
     name: string;
     price: number;
 }
 
-// ? Smart way
+// ? Smart way reuse the existing one
 // * Eitar moddhe type er kon kon property gula dorkar oigula pick korte hobe. 
 type SelectedItemProduct = Pick<Product, 'id' | 'name' | 'price'>;
 
